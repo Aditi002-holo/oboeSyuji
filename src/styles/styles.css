@@ -1,0 +1,92 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0b0b25;
+    background: #fdfdfd;
+}
+
+/* Typography */
+
+h1 {
+    margin: 0;
+    border: 0;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 0.8125rem;
+}
+
+/* Container */
+
+.container {
+    width: 375px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+/* Header */
+
+.title {
+    font-weight: 400;
+}
+
+/* Main */
+
+.main {
+    margin-top: 4em;
+}
+
+.sub-title {
+
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+.line {
+    border-bottom: 1px solid #0b0b25;
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* Buttons */
+
+.btn-wrapper {
+    width: 60%;
+    display: flex;
+    margin: 4em auto;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+.range-btn {
+    width: 4rem;
+    flex-grow: 1;
+    font-family: inherit;
+    background: none;
+    border: #0b0b25 1.4px solid;
+    border-radius: 2px;
+    cursor: pointer;
+
+    padding: 0.2em 1em;
+}
+
+.range-btn:hover,
+.range-btn:focus,
+.range-btn:active {
+    color: #fdfdfd;
+    background: #0b0b25;
+}
+
+/* Content */
+
+.recite-number {
+    font-size: 4rem;
+    margin: 0.6em 0;
+    padding: 0;
+}
