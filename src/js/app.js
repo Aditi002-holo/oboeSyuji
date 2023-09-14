@@ -26,8 +26,12 @@ function updateInitialValue(lowerBoundValue, upperBoundValue) {
     reciteNumberEl.textContent = lowerBoundValue
 
     reciteNumberEl.addEventListener('click', function() {
-        let difference = (upperBoundValue - lowerBoundValue) + 1
-        let randomNumbers = Math.floor(Math.random() * difference) + Number(lowerBoundValue)
-        reciteNumberEl.textContent = randomNumbers
+        reciteNumberEl.textContent = randomNumberGeneratorForARange(lowerBoundValue, upperBoundValue)
     })
+}
+
+function randomNumberGeneratorForARange(lowerBoundValue, upperBoundValue) {
+    let difference = (upperBoundValue - lowerBoundValue) + 1
+    let randomNumbers = Math.floor(Math.random() * difference) + Number(lowerBoundValue)
+    return randomNumbers
 }
