@@ -72,18 +72,21 @@ p {
     border: #0b0b25 1.4px solid;
     border-radius: 2px;
     cursor: pointer;
-
+    transition: 0.3s;
     padding: 0.2em 1em;
 }
 
 .range-btn:hover,
-.range-btn:focus,
-.range-btn:active {
+.range-btn:focus {
     color: #fdfdfd;
     background: #0b0b25;
 }
 
 /* Content */
+
+.recite-content {
+    display: none;
+}
 
 .recite-number {
     font-size: 4rem;
