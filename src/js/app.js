@@ -6,8 +6,9 @@ rangeBtnEl.forEach(function(rangeBtn) {
     rangeBtn.addEventListener('click',function() {
         updateSubTitleContent()
 
-        let initialValue = rangeBtn.dataset.value
-        updateInitialValue(initialValue)
+        let lowerBoundValue = rangeBtn.dataset.lower
+        let upperBoundValue = rangeBtn.dataset.upper
+        updateInitialValue(lowerBoundValue, upperBoundValue)
         
     })
 })
@@ -17,8 +18,16 @@ function updateSubTitleContent() {
     subTitieEl.textContent = 'how many numbers can you recite?' 
 }
 
-function updateInitialValue(initialValue) {
+function updateInitialValue(lowerBoundValue, upperBoundValue) {
     document.querySelector('.btn-wrapper').style.display = "none"
     document.querySelector('.recite-content').style.display = "initial"
-    document.querySelector('.recite-number').innerHTML = initialValue
+
+    const reciteNumberEl = document.querySelector('.recite-number')
+    reciteNumberEl.textContent = lowerBoundValue
+
+    reciteNumberEl.addEventListener('click', function() {
+        let difference = (upperBoundValue - lowerBoundValue) + 1
+        let randomNumbers = Math.floor(Math.random() * difference) + Number(lowerBoundValue)
+        reciteNumberEl.textContent = randomNumbers
+    })
 }
