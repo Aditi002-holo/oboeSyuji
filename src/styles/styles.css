@@ -98,3 +98,25 @@ p {
     padding: 0;
     cursor: pointer;
 }
+
+.show-romaji-btn {
+    font-family: inherit;
+    background: none;
+    border: #0b0b25 1.4px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0.2em 1em;
+    margin-bottom: 2em;
+}
+
+.show-romaji-btn:hover,
+.show-romaji-btn:focus {
+    color: #fdfdfd;
+    background: #0b0b25;
+}
+
+.script-type {
+    /* display: none; */
+    font-size: 0.9rem;
+}
