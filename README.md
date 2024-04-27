@@ -15,7 +15,7 @@
 
 ### Installation
 
-- **Open the URL in a web browser**: https://aditi002-holo.github.io/oboeSuji/
+- **Open the URL in a web browser**: https://aditiintechk.github.io/oboeSuji/
 - **Add to homescreen**: Go to menu and add the app to your device by clicking on "Add to homescreen"
 
 ### Usage
